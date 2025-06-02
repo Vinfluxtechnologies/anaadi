@@ -6,7 +6,7 @@ Global Settings
   --secondary: #8BC34A;
   --white: #ffffff;
   --off-white: #F8F8F8;
-  --dark1: #242424;
+  --dark1: #101010;
   --dark2: #333333;
   --dark3: #999999;
   --teal: #007B8A;
@@ -157,6 +157,14 @@ img.aligncenter {
 
 .bg-color1 {
   background-color: var(--off-white);
+}
+
+.bg-color2 {
+  background-color: #fff8f0;
+}
+
+.bg-color3 {
+  background-color: #fff3e0;
 }
 
 /* ==========================================================================
@@ -549,12 +557,20 @@ body.open-menu {
   z-index: 10;
 }
 
+body:not(.home) #banner {
+  min-height: 450px;
+}
+
 @media (max-width: 991px) {
   #banner {
     padding-bottom: 80px;
   }
   #banner .banner-content {
     margin-bottom: 24px;
+  }
+  body:not(.home) #banner {
+    min-height: 300px;
+    padding-bottom: 40px;
   }
 }
 #footer {
@@ -737,4 +753,75 @@ body.open-menu {
   .card1 {
     padding: 30px 20px;
   }
+}
+.card2 {
+  border: none;
+  border-left: 5px solid var(--primary);
+  border-radius: 4px;
+  background-color: white;
+  transition: transform 0.3s ease;
+  padding: 24px;
+  width: 100%;
+}
+.card2:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(255, 111, 0, 0.2);
+}
+.card2 .icon-box {
+  font-size: 2rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.card2 .title {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card3 {
+  padding: 16px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+.card3 i {
+  color: var(--primary);
+}
+.card3 .title {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--primary);
+}
+.card3:hover {
+  outline: 2px solid var(--primary);
+  transform: translateY(-5px);
+}
+
+.card4 {
+  padding: 24px;
+  text-align: center;
+  width: 100%;
+  border: none;
+  background: #fff3e0;
+  color: #333;
+  border-radius: 1rem;
+  transition-duration: 0.3s;
+}
+.card4 i {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+.card4 .title {
+  font-size: 17px;
+  font-weight: 700;
+}
+.card4 p {
+  font-size: 15px;
+}
+.card4:hover {
+  transform: translateY(-8px);
 }/*# sourceMappingURL=main.css.map */
